@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DeLuna</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="mapa">Map</string>
+    <string name="todas_las_asociaciones">All associations</string>
+    <string name="asociaciones_cercanas">Nearby Associations</string>
+    <string name="negocios">Associations</string>
+    <string name="ajustes">Settings</string>
+    <string name="filtrar">Filter</string>
+    <string name="turismo_consciente">Conscious Tourism</string>
+    <string name="agricultura_regenerativa">Regenerative Agriculture</string>
+    <string name="medicina_tradicional">Traditional Medicine</string>
+    <string name="borrar_filtro">Delete Filter</string>
+    <string name="bioconstrucci_n">Bioconstruction</string>
+    <string name="museo">Museum</string>
+    <string name="ver_en_mapa">See on map</string>
+    <string name="no_hay_ninguna_asociaci_n_a_menos_de_5_km">There are no associations within 5 km</string>
+    <string name="listo">Ok</string>
+    <string name="utilidades">Utilities</string>
+    <string name="convertir">Convert</string>
+    <string name="conversor_de_unidades">Unit converter</string>
+    <string name="conversor_de_divisas">Currency converter</string>
+    <string name="acerca_de">About</string>
+    <string name="conversi_n_realizada_por_exchangerates">conversion made by ExchangeRates</string>
+</resources>

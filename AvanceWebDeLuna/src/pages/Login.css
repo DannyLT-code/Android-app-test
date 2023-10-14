@@ -1,0 +1,134 @@
+body {
+    background-color: rgba(33, 192, 106, 1.0);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Your Preferred Font', sans-serif;
+    color: white;
+    position: relative;
+    overflow-y: hidden; /* Prevent vertical overflow */
+    overflow-x: hidden;
+}
+
+.login-container {
+    text-align: center;
+    position: relative;
+    margin-top: -20px;
+}
+
+.logo {
+    max-width: 30%;
+    height: auto;
+    margin-bottom: 20px;
+    margin-left: 25px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px; /* Adjust the margin as needed */
+}
+
+.input-icon {
+    margin-right: 10px; /* Adjust the margin to control the space between the icon and the text */
+}
+
+.input-field.with-icon {
+    width: 320px; /* Adjust the width as needed */
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background: none;
+    color: white;
+    outline: none;
+}
+.input-field {
+    width: 320px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background: none;
+    color: white;
+    outline: none;
+}
+
+.input-field::placeholder {
+    color: white;
+}
+
+.login-button {
+    z-index: 2;
+    width: 280px;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    color: #21C06A; /* Change the color to your liking */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Add this to your existing styles */
+
+.login-button:hover {
+    background-color: #e64f1f; /* Change the color to your desired one */
+    color: white; /* Change the text color on hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Adjust the shadow on hover */
+    transform: scale(1.05); /* Add a slight scale on hover */
+}
+
+.circle-container {
+    position: fixed;
+    bottom: -5px;
+    left: 0;
+    z-index: -1;
+}
+
+.circle {
+    width: 200px;  /* Adjust the width as needed */
+    height: auto;  /* Maintains the aspect ratio */
+    position: absolute;
+    bottom: 5px;
+    pointer-events: none;
+}
+
+.circle-2 {
+    position: absolute;
+    z-index: -2;   /* Places it behind the first circle */
+    bottom: 5px;
+    pointer-events: none;
+}
+
+.circle-3 {
+    position: absolute;
+    z-index: -3;   /* Places it behind the first two circles */
+    bottom: 5px;
+    pointer-events: none;
+}
+
+.vector-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: -4; /* Adjust the z-index as needed */
+}
+
+.vector {
+    height: auto;  /* Maintains the aspect ratio */
+    pointer-events: none;
+}
+
+
+
+
+
+
+

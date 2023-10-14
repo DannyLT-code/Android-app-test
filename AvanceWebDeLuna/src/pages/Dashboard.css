@@ -1,0 +1,238 @@
+/* Dashboard.css */
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: white;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100vw;
+}
+
+.dashboard-logo {
+    max-width: 10%;
+    height: auto;
+    margin-left: 25px;
+}
+
+.logout-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin-right: 25px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #ff0000;
+    color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.dashboard-content {
+    display: flex;
+    background-color: white; /* Set the background color of the content to white */
+}
+
+.form-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-label {
+    font-size: 16px;
+    width: 120px;
+    margin-right: 10px;
+    text-align: left; /* Change text alignment to left */
+    color: #333;
+}
+
+
+.form-input,
+.form-textarea,
+.form-select {
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.form-textarea {
+    width: 100%; /* Adjust the width as needed */
+    resize: none; /* Disable textarea resizing */
+    overflow-y: auto; /* Show vertical scrollbar when needed */
+}
+
+
+.form-submit {
+    width: 100%; /* Set to 100% to align with other form elements */
+    padding: 12px; /* Adjust padding for a slightly larger size */
+    /*margin-top: 15px;*/
+    border: none;
+    border-radius: 5px;
+    background-color: #21C06A;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.form-submit:hover {
+    background-color: #1A9C55;
+}
+
+.list-view {
+    flex: 1;
+    max-width: 600px;
+    max-height: 800px;
+    padding: 20px;
+    background-color: rgba(33, 192, 106, 1.0);
+    overflow-y: auto;
+    margin-right: 200px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.list-view ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-view li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.list-view li span {
+    margin-left: 10px;
+    flex: 1;
+    text-shadow: -0.2px -0.2px 0 #000, 0.2px -0.2px 0 #000, -0.2px 0.2px 0 #000, 0.2px 0.2px 0 #000;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.list-view li svg {
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.list-view li button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin-right: 10px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.list-view li button.edit:hover {
+    color: #3498db; /* Light blue color for hover effect on Edit button */
+}
+
+.list-view li button.delete:hover {
+    color: #ff0000; /* Red color for hover effect on Trash button */
+}
+
+.form-field.checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-checkbox-label {
+    font-size: 16px;
+    margin-right: 10px;
+    color: #333;
+}
+
+.form-checkbox {
+    margin-left: 20px;
+}
+
+.form-input-checkmark {
+    position: absolute;
+    top: 50%; /* Adjust vertically as needed */
+    right: 10px; /* Adjust horizontally as needed */
+    transform: translate(0, -50%);
+}
+
+.file-input-container {
+    position: relative;
+}
+
+.image-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Change from flex-start to center */
+}
+
+
+.image-input-container .form-field {
+    margin-bottom: 10px;
+}
+
+.image-input-container .file-input-container {
+    position: relative;
+}
+
+.form-input-checkmark {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.image-form-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.label-container {
+    display: flex;
+    align-items: center;
+    width: 120px; /* Match the width of your other form labels */
+}
+
+.tooltip {
+    position: absolute;
+    background-color: #3498db;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
